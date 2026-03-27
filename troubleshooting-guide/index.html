@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IT Troubleshooting Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>IT Troubleshooting Knowledge Base</h1>
+
+    <input type="text" id="search" placeholder="Search issues..." onkeyup="searchIssues()">
+
+    <div class="issue" data-category="network" data-severity="high" onclick="toggleSolution(this)">
+        <h3>WiFi Not Working</h3>
+        <span class="tag high">High</span>
+        <p class="solution">Restart router, check network settings, reconnect to WiFi, and verify IP address.</p>
+    </div>
+
+    <div class="issue" data-category="system" data-severity="medium" onclick="toggleSolution(this)">
+        <h3>Computer Running Slow</h3>
+        <span class="tag medium">Medium</span>
+        <p class="solution">Close unused programs, restart system, check Task Manager, and install updates.</p>
+    </div>
+
+    <div class="issue" data-category="account" data-severity="high" onclick="toggleSolution(this)">
+        <h3>Cannot Log In</h3>
+        <span class="tag high">High</span>
+        <p class="solution">Reset password, check if account is locked, and verify credentials.</p>
+    </div>
+
+    <div class="issue" data-category="audio" data-severity="low" onclick="toggleSolution(this)">
+        <h3>No Sound</h3>
+        <span class="tag low">Low</span>
+        <p class="solution">Check volume settings, audio device output, and restart system.</p>
+    </div>
+
+    <p id="noResults" style="display:none;">No results found.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

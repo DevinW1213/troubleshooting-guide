@@ -1,0 +1,66 @@
+body {
+    font-family: Arial;
+    background: #0d1117;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+.issue {
+    background: #161b22;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.issue:hover {
+    transform: scale(1.02);
+    background: #1f2933;
+}
+
+.solution {
+    display: none;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+.tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.tag.high {
+    background: red;
+}
+
+.tag.medium {
+    background: orange;
+}
+
+.tag.low {
+    background: green;
+}
+
+#noResults {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+}
